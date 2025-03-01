@@ -4,123 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-4">
         <h1>Abcd</h1>
-        <img src="profile.jpg" alt="Profile Image" class="profile-img">
+        <img src="profile.jpg" alt="Profile Image" class="profile-img rounded-circle">
     </header>
-    <div class="container">
-        <section>
+    
+    <div class="container mt-4">
+        <section class="card p-3">
             <h2>Contact Information</h2>
             <p>Email: jammusaikiran@gmail.com</p>
             <p>Mobile: +9882382623</p>
         </section>
-        <section>
+
+        <section class="card p-3 mt-3">
             <h2>Career Objective</h2>
             <p>To obtain a challenging position in a reputed organization where I can enhance my skills and contribute to growth.</p>
         </section>
-        <section>
+
+        <section class="card p-3 mt-3">
             <h2>Academic Information</h2>
-            <table>
-                <tr>
-                    <th>Degree</th>
-                    <th>Institution</th>
-                    <th>Year</th>
-                    <th>Percentage</th>
-                </tr>
-                <tr>
-                    <td>B.Tech CSE</td>
-                    <td>KMIT</td>
-                    <td>2024</td>
-                    <td>85%</td>
-                </tr>
-                <tr>
-                    <td>Intermediate</td>
-                    <td>Narayana Junior College</td>
-                    <td>2020</td>
-                    <td>90%</td>
-                </tr>
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Tech CSE</td>
+                        <td>KMIT</td>
+                        <td>2024</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate</td>
+                        <td>Narayana Junior College</td>
+                        <td>2020</td>
+                        <td>90%</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
-        <section>
+
+        <section class="card p-3 mt-3">
             <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong> C, C++, Java, Python</li>
-                <li><strong>Databases:</strong> MySQL, MongoDB</li>
-                <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, React.js</li>
+            <ul class="list-group">
+                <li class="list-group-item">Programming Languages: C, C++, Java, Python</li>
+                <li class="list-group-item">Databases: MySQL, MongoDB</li>
+                <li class="list-group-item">Web Technologies: HTML, CSS, JavaScript, React.js</li>
             </ul>
         </section>
-        <section>
+
+        <section class="card p-3 mt-3">
             <h2>Projects</h2>
-            <ol>
-                <li><strong>Sentiment Analysis</strong> - <a href="https://github.com/jammusaikiran/pllm.git">GitHub Link</a></li>
-                <li><strong>LLM Domain Specific ChatBot</strong> - <a href="https://github.com/ganesh-ya12/domain-specific.git">GitHub Link</a></li>
-                <li><strong>IT Training System</strong> - <a href="https://github.com/jammusaikiran/project-Abits1.git">GitHub Link</a></li>
+            <ol class="list-group">
+                <li class="list-group-item"><strong>Sentiment Analysis</strong> - <a href="https://github.com/jammusaikiran/pllm.git">GitHub Link</a></li>
+                <li class="list-group-item"><strong>LLM Domain Specific ChatBot</strong> - <a href="https://github.com/ganesh-ya12/domain-specific.git">GitHub Link</a></li>
+                <li class="list-group-item"><strong>IT Training System</strong> - <a href="https://github.com/jammusaikiran/project-Abits1.git">GitHub Link</a></li>
             </ol>
         </section>
-        <section>
+
+        <section class="card p-3 mt-3">
             <h2>Achievements</h2>
-            <ol>
-                <li>Winner of Students Hackathon</li>
-                <li>Contributor to Open Source Projects</li>
+            <ol class="list-group">
+                <li class="list-group-item">Winner of Students Hackathon</li>
+                <li class="list-group-item">Contributor to Open Source Projects</li>
             </ol>
         </section>
-        <section>
+
+        <section class="card p-3 mt-3">
             <h2>Strengths</h2>
-            <ul>
-                <li>Problem-Solving</li>
-                <li>Quick Learner</li>
-                <li>Teamwork</li>
+            <ul class="list-group">
+                <li class="list-group-item">Problem-Solving</li>
+                <li class="list-group-item">Quick Learner</li>
+                <li class="list-group-item">Teamwork</li>
             </ul>
         </section>
-        <section>
+
+        <section class="card p-3 mt-3">
             <h2>Personal Profile</h2>
-            <table>
-                <tr>
-                    <th>Current Location</th>
-                    <td>Hyderabad, India</td>
-                </tr>
-                <tr>
-                    <th>Date of Birth</th>
-                    <td>10-02-2002</td>
-                </tr>
-                <tr>
-                    <th>Languages Known</th>
-                    <td>English, Hindi, Telugu</td>
-                </tr>
+            <table class="table table-bordered">
+                <tr><th>Current Location</th><td>Hyderabad, India</td></tr>
+                <tr><th>Date of Birth</th><td>10-02-2002</td></tr>
+                <tr><th>Languages Known</th><td>English, Hindi, Telugu</td></tr>
             </table>
         </section>
-        <section>
+
+        <section class="card p-3 mt-3">
             <h2>Contact</h2>
             <div class="social">
-                <a href="https://www.linkedin.com/in/saikiran-jammu-502851311/">LinkedIn</a>
-                <a href="https://github.com/jammusaikiran">GitHub</a>
-                <a href="https://x.com/saikiranjammu07">Twitter</a>
+                <a href="https://www.linkedin.com/in/saikiran-jammu-502851311/" class="btn btn-primary">LinkedIn</a>
+                <a href="https://github.com/jammusaikiran" class="btn btn-dark">GitHub</a>
+                <a href="https://x.com/saikiranjammu07" class="btn btn-info">Twitter</a>
             </div>
         </section>
-        <div class="container mt-4">
-            <section>
-                <h2>Feedback Form</h2>
-                <form id="feedback-form">
-                    <div>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="3" required></textarea>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
-        </div>
+
+        <section class="card p-3 mt-3">
+            <h2>Feedback Form</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" rows="3" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </section>
     </div>
-    <script src="js/script.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
