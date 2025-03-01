@@ -20,7 +20,6 @@
             padding: 20px;
         }
 
-        /* Header */
         header {
             font-size: 2rem;
             font-weight: bold;
@@ -30,13 +29,11 @@
             margin-bottom: 20px;
         }
 
-        /* Container */
         .container {
             max-width: 800px;
             margin: 0 auto;
         }
 
-        /* Sections */
         section {
             background-color: #1e1e1e;
             margin: 20px 0;
@@ -50,16 +47,15 @@
             margin-bottom: 10px;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
+        ul, ol {
+            text-align: left;
+            padding-left: 20px;
         }
 
         li {
             padding: 8px;
         }
 
-        /* Links */
         a {
             color: #ff9800;
             text-decoration: none;
@@ -69,11 +65,6 @@
 
         a:hover {
             color: #ffcc80;
-        }
-
-        /* Social Links */
-        .social {
-            margin-top: 10px;
         }
 
         .social a {
@@ -90,44 +81,107 @@
             background-color: #ffcc80;
         }
 
-        /* Responsive */
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
 
-            .container {
-                width: 100%;
-            }
+        table, th, td {
+            border: 1px solid #ff9800;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Feedback Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        input, textarea, button {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            background-color: #ff9800;
+            color: #121212;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #ffcc80;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Saikiran's Portfolio</h1>
     </header>
     <div class="container">
         <section>
-            <h2>About Me</h2>
-            <p>Hi, I'm Saikiran, a web developer passionate about creating innovative solutions.</p>
+            <h2>Contact Information</h2>
+            <p>Email: jammusaikiran@gmail.com</p>
+            <p>Mobile: +9882382623</p>
         </section>
+
         <section>
-            <h2>Skills</h2>
+            <h2>Career Objective</h2>
+            <p>To obtain a challenging position in a reputed organization where I can enhance my skills and contribute to growth.</p>
+        </section>
+
+        <section>
+            <h2>Academic Information</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>B.Tech CSE</td>
+                    <td>KMIT</td>
+                    <td>2024</td>
+                    <td>85%</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>Narayana Junior College</td>
+                    <td>2020</td>
+                    <td>90%</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
             <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>React.js, Vue.js</li>
-                <li>Python, Java</li>
-                <li>SQL, NoSQL Databases</li>
+                <li>Programming Languages: C, C++, Java, Python</li>
+                <li>Databases: MySQL, MongoDB</li>
+                <li>Web Technologies: HTML, CSS, JavaScript, React.js</li>
             </ul>
         </section>
+
         <section>
             <h2>Projects</h2>
             <ul>
-                <li><a href="https://github.com/jammusaikiran/pllm.git">Sentiment Analysis - GitHub</a></li>
-                <li><a href="https://github.com/ganesh-ya12/domain-specific.git">LLM Domain Specific ChatBot - GitHub</a></li>
-                <li><a href="https://github.com/jammusaikiran/project-Abits1.git">IT Training System - GitHub</a></li>
+                <li><a href="https://github.com/jammusaikiran/pllm.git">Sentiment Analysis</a></li>
+                <li><a href="https://github.com/ganesh-ya12/domain-specific.git">LLM Domain Specific ChatBot</a></li>
+                <li><a href="https://github.com/jammusaikiran/project-Abits1.git">IT Training System</a></li>
             </ul>
         </section>
+
         <section>
             <h2>Achievements</h2>
             <ul>
@@ -135,19 +189,24 @@
                 <li>Contributor to Open Source Projects</li>
             </ul>
         </section>
-        <section>
-            <h2>Education</h2>
-            <p>CSE in Computer Science - KMIT</p>
-        </section>
+
         <section>
             <h2>Contact</h2>
-            <p>Email: jammusaikiran@gmail.com</p>
-            <p>Phone: +9882382623</p>
             <div class="social">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Twitter</a>
+                <a href="https://www.linkedin.com/in/saikiran-jammu-502851311/">LinkedIn</a>
+                <a href="https://github.com/jammusaikiran">GitHub</a>
+                <a href="https://x.com/saikiranjammu07">Twitter</a>
             </div>
+        </section>
+
+        <section>
+            <h2>Feedback Form</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </div>
 </body>
